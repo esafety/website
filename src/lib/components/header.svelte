@@ -11,12 +11,24 @@
             }
         });
     });
+
+    function returnToTop () {
+        window.scrollTo({top: 0, behavior:"smooth"})
+    }
+
 </script>
 
 <header>
     <h1>The eSafety Guidebook</h1>
     <div class="buttons">
-        <div class="button-return"><i class="fa-solid fa-hand-point-up"></i></div>
-        <div class="button-config"><i class="fa-solid fa-gear"></i></div>
+
+        <button title="Return to Top" class="button-return" on:click={returnToTop}>
+            <i class="fa-solid fa-hand-point-up"></i>
+        </button>
+        
+        <button title="Config" class="button-config">
+            <i class="fa-solid fa-gear"></i>
+        </button>
+
     </div>
 </header>

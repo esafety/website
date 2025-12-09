@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asset&family=Fira+Mono:wght@400;500;700&family=Press+Start+2P&display=swap');
 
 body {
     color: #5ddd8c;
@@ -6,8 +6,12 @@ body {
     background-color: #090a12;
 }
 
+button {
+    all: unset;
+}
+
 h1 {
-    font-family: "Press Start 2P", system-ui;
+    font-family: "Asset", system-ui;
 }
 p {
     font-family: "Fira Mono", monospace;;
@@ -26,7 +30,7 @@ main {
 header {
     display: flex;
     position: sticky;
-    height: 50px;
+    height: 70px;
     top: 0;
     align-items: center;
     justify-content: space-between;
@@ -36,7 +40,8 @@ header {
 }
 
 header > h1 {
-    font-size: 1rem;
+    font-size: 150%;
+    font-family: cursive;
     color: #f9fcfe;
     margin: 0;
 }
@@ -47,7 +52,7 @@ header > h1 {
     height: 100%;
 }
 
-.buttons > div {
+.buttons > button {
     aspect-ratio: 1;
     border-left: #7ef692 solid 1.5px;
     height: 100%;
@@ -61,7 +66,7 @@ header > h1 {
 }
 
 .buttons i {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .button-return {
