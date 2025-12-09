@@ -5,7 +5,10 @@
 </script>
 
 <svelte:head>
+	<title>eSafety Guidebook</title>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-{@render children()}
+<main>
+	{@render children()}
+</main>
