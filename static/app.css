@@ -1,0 +1,28 @@
+
+body {
+    color: #dbe6ef;
+    margin: 0;
+    background-color: #1d203a;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+
+/* Text content */
+
+.content {
+    width: 100%;
+    max-width: none;
+}
+
+@media (min-width: 768px) {
+    .content {
+        width: 50%;
+        max-width: 600px;
+    }
+}
