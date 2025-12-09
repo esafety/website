@@ -1,21 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Press+Start+2P&display=swap');
 
 body {
-    color: #dbe6ef;
+    color: #5ddd8c;
     margin: 0;
-    background-color: #1d203a;
+    background-color: #090a12;
 }
+
+h1 {
+    font-family: "Press Start 2P", system-ui;
+}
+p {
+    font-family: "Fira Mono", monospace;;
+}
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 1rem;
 }
 
+/* Header */
+
+header {
+    display: flex;
+    position: sticky;
+    height: 50px;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 0.5rem;
+    border-bottom: #7ef692 solid 1.5px;
+}
+
+header > h1 {
+    font-size: 1rem;
+    color: #f9fcfe;
+    margin: 0;
+}
+
+.buttons {
+    /* border-bottom: #f9fcfe solid 1.5px; */
+    display: flex;
+    height: 100%;
+}
+
+.buttons > div {
+    aspect-ratio: 1;
+    border-left: #7ef692 solid 1.5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons > div :hover {
+    color: rgb(96, 109, 246);
+}
+
+.buttons i {
+    font-size: 1.5rem;
+}
+
+.button-return {
+    visibility: hidden;
+}
+
+/* Header (Scrolled) */
+
+    header.scrolled > h1 {
+        visibility: hidden;
+    }
+
+    header.scrolled {
+        border: none;
+    }
+
+    header.scrolled .buttons {
+        border-bottom: #7ef692 solid 1.5px;
+    }
+
+    header.scrolled .button-return {
+        visibility: visible;
+    }
 
 /* Text content */
 
 .content {
+    /* background-color: violet; */
     width: 100%;
     max-width: none;
 }

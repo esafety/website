@@ -1,5 +1,6 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
+	import MyHeader from '$lib/components/header.svelte'
 
 	let { children } = $props();
 </script>
@@ -8,6 +9,8 @@
 	<title>eSafety Guidebook</title>
 	<link rel="icon" href={favicon} />
 </svelte:head>
+
+<MyHeader />
 
 <main>
 	<div class="content">
