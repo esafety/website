@@ -1,0 +1,7 @@
+{
+  "name": "thecasualdev",
+  "compatibility_date": "2025-12-01",
+  "assets": {
+    "directory": "./build"
+  }
+}
