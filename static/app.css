@@ -105,3 +105,21 @@ header > h1 {
         max-width: 600px;
     }
 }
+
+/* Links stuff */
+
+a :link {
+    color: #5ddd8c;
+}
+a :visited {
+    color: #dbdd5d;
+}
+a :hover {
+    color: #78df2f;
+}
+a:active {
+    color: #5ddd8c;
+}
+
+
+/* Ps. I fuckin hate CSS :( */
