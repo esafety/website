@@ -108,14 +108,17 @@ header > h1 {
 
 /* Links stuff */
 
-a :link {
+a {
     color: #5ddd8c;
 }
-a :visited {
+a:link {
+    color: #5ddd8c;
+}
+a:visited {
     color: #dbdd5d;
 }
-a :hover {
-    color: #78df2f;
+a:hover {
+    color: #2fdcdf;
 }
 a:active {
     color: #5ddd8c;
